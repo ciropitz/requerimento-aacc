@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Requerimento de registro de Atividades Acadêmico-Científico-Culturais (AACC) do Curso de Engenharia de Controle e Automação da UFSC, Campus Blumenau.">
+<title>Requerimento de AACC – Engenharia de Controle e Automação – UFSC Blumenau</title>
+<style>
+  html{background:#f3f5f7}
+  body{margin:0;padding:24px 16px 48px;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:#f3f5f7}
+</style>
+</head>
+<body>
+<header style="max-width:980px;margin:0 auto 14px;font-size:15px"><a href="https://automacao.blumenau.ufsc.br/atividades-academico-cientifico-culturais/" style="color:#0b4f9c">&larr; Página de AACC do curso (site da UFSC)</a></header>
+<!-- ===================== REQUERIMENTO DE AACC – ECA/UFSC BLUMENAU =====================
+     Bloco autocontido (HTML + CSS + JavaScript). Para usar no WordPress, cole todo este
+     conteúdo em um bloco "HTML personalizado". Nenhum dado ou arquivo é enviado a servidores:
+     o PDF é montado no navegador do aluno (bibliotecas pdf-lib e pdf.js, carregadas via CDN).
+     ====================================================================================== -->
+<div id="aacc-app" lang="pt-BR">
+<style>
+#aacc-app{--a-accent:#0b4f9c;--a-accent-strong:#083b75;--a-accent-soft:#eaf1fb;--a-err:#b3261e;--a-err-soft:#fdeeec;--a-warn:#7a5200;--a-warn-soft:#fff5dd;--a-ok:#1d6b39;--a-ok-soft:#e8f5ec;--a-border:#cfd6de;--a-muted:#56606b;--a-text:#1d2329;--a-bg:#fff;--a-bg2:#f5f7f9;
+  color:var(--a-text);font-size:16px;line-height:1.5;max-width:980px;margin:0 auto;text-align:left}
+#aacc-app *,#aacc-app *::before,#aacc-app *::after{box-sizing:border-box}
+#aacc-app h2,#aacc-app h3,#aacc-app h4{color:var(--a-text);font-family:inherit;letter-spacing:normal;text-transform:none;margin:0}
+#aacc-app p{margin:0 0 .6em}
+#aacc-app p,#aacc-app li,#aacc-app td,#aacc-app th,#aacc-app dd,#aacc-app dt,#aacc-app label,#aacc-app span{line-height:1.5}
+#aacc-app .aacc-h2{font-size:1.5rem;line-height:1.25;font-weight:700;margin-bottom:.4rem}
+#aacc-app .aacc-lead{color:var(--a-muted);margin-bottom:1rem}
+#aacc-app .aacc-card{background:var(--a-bg);border:1px solid var(--a-border);border-radius:10px;padding:1.1rem 1.2rem;margin:0 0 1rem}
+#aacc-app .aacc-card-title{font-size:1.1rem;font-weight:700;margin-bottom:.8rem;display:flex;align-items:center;gap:.5rem}
+#aacc-app .aacc-step{display:inline-flex;align-items:center;justify-content:center;width:1.6rem;height:1.6rem;border-radius:50%;background:var(--a-accent);color:#fff;font-size:.85rem;font-weight:700;flex:none}
+#aacc-app .aacc-steps{margin:0 0 1rem;padding:0 0 0 1.4rem;list-style:decimal outside;color:var(--a-text)}
+#aacc-app .aacc-steps li{margin:.15rem 0}
+#aacc-app .aacc-privacy{background:var(--a-accent-soft);border-left:4px solid var(--a-accent);padding:.6rem .8rem;border-radius:6px;font-size:.92rem;margin-bottom:1rem}
+#aacc-app .aacc-grid{display:grid;gap:.8rem 1rem;grid-template-columns:repeat(12,minmax(0,1fr))}
+#aacc-app .aacc-col-12{grid-column:span 12}#aacc-app .aacc-col-8{grid-column:span 8}#aacc-app .aacc-col-6{grid-column:span 6}#aacc-app .aacc-col-4{grid-column:span 4}#aacc-app .aacc-col-3{grid-column:span 3}
+@media (max-width:720px){#aacc-app .aacc-col-8,#aacc-app .aacc-col-6,#aacc-app .aacc-col-4,#aacc-app .aacc-col-3{grid-column:span 12}}
+#aacc-app .aacc-label{display:block;font-weight:600;font-size:.92rem;margin:0 0 .25rem;color:var(--a-text);text-transform:none;letter-spacing:normal}
+#aacc-app .aacc-opt{font-weight:400;color:var(--a-muted)}
+#aacc-app input[type=text],#aacc-app input[type=number],#aacc-app select{display:block;width:100%;max-width:100%;height:auto;min-height:2.5rem;margin:0;padding:.45rem .6rem;font:inherit;font-size:1rem;line-height:1.3;color:var(--a-text);background:#fff;border:1px solid #9aa5b1;border-radius:6px;box-shadow:none}
+#aacc-app input:focus,#aacc-app select:focus{outline:3px solid rgba(11,79,156,.25);border-color:var(--a-accent)}
+#aacc-app [aria-invalid=true]{border-color:var(--a-err)!important;background:var(--a-err-soft)!important}
+#aacc-app .aacc-static{min-height:2.5rem;padding:.45rem .6rem;border:1px dashed var(--a-border);border-radius:6px;background:var(--a-bg2);color:var(--a-muted)}
+#aacc-app .aacc-hint{font-size:.85rem;color:var(--a-muted);margin-top:.25rem}
+#aacc-app .aacc-field-err{font-size:.87rem;color:var(--a-err);margin-top:.3rem;font-weight:600}
+#aacc-app .aacc-field-err:empty{display:none}
+#aacc-app .aacc-field-err p{margin:0 0 .2rem}
+#aacc-app .aacc-btn{display:inline-flex;align-items:center;justify-content:center;gap:.4rem;min-height:2.5rem;padding:.5rem 1rem;font:inherit;font-size:.95rem;font-weight:600;line-height:1.2;text-decoration:none;text-transform:none;letter-spacing:normal;border-radius:6px;border:1px solid transparent;cursor:pointer;box-shadow:none;width:auto}
+#aacc-app .aacc-btn:focus-visible{outline:3px solid rgba(11,79,156,.35);outline-offset:2px}
+#aacc-app .aacc-btn-primary{background:var(--a-accent);color:#fff;border-color:var(--a-accent)}
+#aacc-app .aacc-btn-primary:hover{background:var(--a-accent-strong)}
+#aacc-app .aacc-btn-primary[disabled]{opacity:.6;cursor:progress}
+#aacc-app .aacc-btn-secondary{background:#fff;color:var(--a-accent);border-color:var(--a-accent)}
+#aacc-app .aacc-btn-secondary:hover{background:var(--a-accent-soft)}
+#aacc-app .aacc-btn-ghost{background:transparent;color:var(--a-err);border-color:transparent;padding:.35rem .6rem;min-height:2rem}
+#aacc-app .aacc-btn-ghost:hover{background:var(--a-err-soft)}
+#aacc-app .aacc-btn-lg{font-size:1.05rem;padding:.75rem 1.4rem}
+#aacc-app .aacc-entry{border:1px solid var(--a-border);border-left:5px solid var(--a-accent);border-radius:10px;padding:1rem 1.1rem;margin:0 0 1rem;background:#fff}
+#aacc-app .aacc-entry.aacc-has-err{border-left-color:var(--a-err)}
+#aacc-app .aacc-entry-head{display:flex;justify-content:space-between;align-items:center;gap:.5rem;margin-bottom:.7rem}
+#aacc-app .aacc-entry-title{font-size:1.05rem;font-weight:700}
+#aacc-app .aacc-badge{display:inline-block;background:var(--a-accent);color:#fff;border-radius:999px;padding:.05rem .6rem;font-size:.8rem;font-weight:700;margin-left:.4rem;vertical-align:middle}
+#aacc-app .aacc-iteminfo{background:var(--a-bg2);border-radius:6px;padding:.55rem .75rem;font-size:.88rem;margin-top:.45rem}
+#aacc-app .aacc-iteminfo:empty{display:none}
+#aacc-app .aacc-iteminfo dl{display:grid;grid-template-columns:max-content 1fr;gap:.15rem .7rem;margin:0}
+#aacc-app .aacc-iteminfo dt{font-weight:600;color:var(--a-muted)}
+#aacc-app .aacc-iteminfo dd{margin:0}
+#aacc-app .aacc-limit{font-size:.87rem;margin-top:.3rem;color:var(--a-muted)}
+#aacc-app .aacc-files{list-style:none;margin:.5rem 0 0;padding:0}
+#aacc-app .aacc-files li{display:flex;align-items:center;gap:.5rem;justify-content:space-between;border:1px solid var(--a-border);border-radius:6px;padding:.35rem .5rem .35rem .7rem;margin:0 0 .35rem;font-size:.9rem;background:var(--a-bg2)}
+#aacc-app .aacc-files li.aacc-file-err{border-color:var(--a-err);background:var(--a-err-soft)}
+#aacc-app .aacc-file-name{font-weight:600;word-break:break-all}
+#aacc-app .aacc-file-meta{color:var(--a-muted);font-size:.83rem}
+#aacc-app .aacc-file-err .aacc-file-meta{color:var(--a-err);font-weight:600}
+#aacc-app .aacc-vh{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+#aacc-app .aacc-file-row{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem}
+#aacc-app .aacc-drop.aacc-dragover{outline:3px dashed var(--a-accent);outline-offset:4px;border-radius:8px}
+#aacc-app table.aacc-table{width:100%;border-collapse:collapse;border:1px solid var(--a-border);font-size:.92rem;margin:0}
+#aacc-app table.aacc-table th,#aacc-app table.aacc-table td{border:1px solid var(--a-border);padding:.35rem .5rem;text-align:left;vertical-align:top;background:transparent}
+#aacc-app table.aacc-table th{background:var(--a-bg2);font-weight:600}
+#aacc-app table.aacc-table td.aacc-num,#aacc-app table.aacc-table th.aacc-num{text-align:right;white-space:nowrap}
+#aacc-app tr.aacc-row-err td{background:var(--a-err-soft);color:var(--a-err);font-weight:600}
+#aacc-app .aacc-table-wrap{overflow-x:auto}
+#aacc-app .aacc-total{display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;margin-top:.8rem;font-size:.98rem}
+#aacc-app .aacc-total strong{font-size:1.05rem}
+#aacc-app .aacc-msg{border-radius:8px;padding:.7rem .9rem;margin:.8rem 0 0;font-size:.95rem}
+#aacc-app .aacc-msg:empty{display:none}
+#aacc-app .aacc-msg ul{margin:.3rem 0 0;padding-left:1.2rem}
+#aacc-app .aacc-msg-err{background:var(--a-err-soft);border:1px solid #f1b8b2;color:var(--a-err)}
+#aacc-app .aacc-msg-warn{background:var(--a-warn-soft);border:1px solid #f0d596;color:var(--a-warn)}
+#aacc-app .aacc-msg-ok{background:var(--a-ok-soft);border:1px solid #a9d8b8;color:var(--a-ok)}
+#aacc-app .aacc-msg-info{background:var(--a-accent-soft);border:1px solid #b9cdea;color:var(--a-accent-strong)}
+#aacc-app .aacc-actions{display:flex;flex-wrap:wrap;align-items:center;gap:.8rem}
+#aacc-app .aacc-progress{font-size:.95rem;color:var(--a-muted)}
+#aacc-app details.aacc-ref summary{cursor:pointer;font-weight:600;color:var(--a-accent)}
+#aacc-app .aacc-empty{color:var(--a-muted);font-style:italic;margin:.2rem 0 1rem}
+#aacc-app a{color:var(--a-accent)}
+#aacc-app .aacc-sign-alert{background:var(--a-warn-soft);border:1px solid #f0d596;color:var(--a-warn);border-radius:6px;padding:.5rem .7rem}
+</style>
+
+<noscript><p><strong>Esta aplicação precisa de JavaScript habilitado.</strong></p></noscript>
+
+<h2 class="aacc-h2">Requerimento de Atividades Acadêmico-Científico-Culturais (AACC)</h2>
+<p class="aacc-lead">Curso de Graduação em Engenharia de Controle e Automação – UFSC, Campus Blumenau</p>
+
+<ol class="aacc-steps">
+  <li>Preencha seus dados.</li>
+  <li>Registre cada atividade em um bloco próprio: tipo, período (semestres letivos), carga horária demandada e comprovante.</li>
+  <li>Clique em <strong>Gerar PDF</strong>. O arquivo reúne o requerimento (página 1), a declaração de autenticidade (página 2) e os comprovantes numerados.</li>
+  <li>Assine digitalmente o PDF gerado, sem imprimir nem alterar o arquivo, pelo <a data-aacc-link="assina" target="_blank" rel="noopener">Assina UFSC</a> ou pelo <a data-aacc-link="govbr" target="_blank" rel="noopener">assinador gov.br</a> (conta gov.br nível prata ou ouro). <strong>Assine os dois campos de assinatura do PDF:</strong> o do requerimento (página 1) e o da Declaração de Autenticidade (página 2).</li>
+  <li>Envie o PDF assinado à Comissão de Análise das AACCs pelo <a data-aacc-link="pai" target="_blank" rel="noopener">Portal de Atendimento Institucional (PAI) – Secretaria dos Cursos do Campus Blumenau</a> (acesso com o IdUFSC).</li>
+</ol>
+<p class="aacc-privacy">Seus dados e comprovantes são processados apenas neste navegador; nada é enviado a servidores. Ao recarregar a página, o preenchimento é perdido.</p>
+
+<section class="aacc-card" aria-labelledby="aacc-t1">
+  <h3 class="aacc-card-title" id="aacc-t1"><span class="aacc-step">1</span>Dados do(a) aluno(a)</h3>
+  <div class="aacc-grid">
+    <div class="aacc-col-8">
+      <label class="aacc-label" for="aacc-nome">Nome completo</label>
+      <input type="text" id="aacc-nome" autocomplete="name" maxlength="120">
+      <div class="aacc-field-err" id="aacc-nome-err"></div>
+    </div>
+    <div class="aacc-col-4">
+      <label class="aacc-label" for="aacc-mat">Matrícula</label>
+      <input type="text" id="aacc-mat" inputmode="numeric" maxlength="12" autocomplete="off">
+      <div class="aacc-field-err" id="aacc-mat-err"></div>
+    </div>
+    <div class="aacc-col-6">
+      <label class="aacc-label" for="aacc-curr">Currículo</label>
+      <select id="aacc-curr">
+        <option value="">Selecione…</option>
+        <option value="2014-1">2014-1 – 120 h (144 h-a) de AACC</option>
+        <option value="2023-2">2023-2 – 60 h (72 h-a) de AACC</option>
+      </select>
+      <div class="aacc-field-err" id="aacc-curr-err"></div>
+    </div>
+    <div class="aacc-col-3">
+      <span class="aacc-label">Curso</span>
+      <div class="aacc-static">Eng. de Controle e Automação</div>
+    </div>
+    <div class="aacc-col-3">
+      <span class="aacc-label">Turno</span>
+      <div class="aacc-static">Integral</div>
+    </div>
+  </div>
+</section>
+
+<section class="aacc-card" aria-labelledby="aacc-t2">
+  <h3 class="aacc-card-title" id="aacc-t2"><span class="aacc-step">2</span>Atividades e comprovantes</h3>
+  <p class="aacc-hint" style="margin-bottom:.9rem">Cada bloco corresponde a um comprovante, que recebe um número no PDF. Nas atividades pontuadas <em>por unidade</em> (eventos, cursos, publicações, visitas etc.), registre cada unidade em um bloco separado. Nas atividades pontuadas <em>por semestre</em>, informe o período em que a atividade foi realizada.</p>
+  <div id="aacc-list"></div>
+  <p class="aacc-empty" id="aacc-empty">Nenhuma atividade adicionada.</p>
+  <button type="button" class="aacc-btn aacc-btn-secondary" id="aacc-add">+ Adicionar atividade</button>
+  <div class="aacc-msg aacc-msg-err" id="aacc-list-err" role="alert"></div>
+</section>
+
+<section class="aacc-card" aria-labelledby="aacc-t3">
+  <h3 class="aacc-card-title" id="aacc-t3"><span class="aacc-step">3</span>Resumo e geração do PDF</h3>
+  <div class="aacc-table-wrap">
+    <table class="aacc-table" id="aacc-summary">
+      <thead><tr><th>Código</th><th class="aacc-num">Demandado</th><th class="aacc-num">Limite total</th><th>Situação</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <div class="aacc-total" id="aacc-total"></div>
+  <div class="aacc-msg aacc-msg-warn" id="aacc-warn"></div>
+  <div class="aacc-msg aacc-msg-err" id="aacc-errors" role="alert" tabindex="-1"></div>
+  <div class="aacc-actions" style="margin-top:1rem">
+    <button type="button" class="aacc-btn aacc-btn-primary aacc-btn-lg" id="aacc-gen">Gerar PDF do requerimento</button>
+    <span class="aacc-progress" id="aacc-progress" aria-live="polite"></span>
+  </div>
+  <p class="aacc-hint" style="margin-top:.6rem">Depois de gerar, assine digitalmente os <strong>dois campos</strong> do PDF (requerimento e Declaração de Autenticidade) e envie à Comissão de Análise das AACCs pelo PAI.</p>
+  <div class="aacc-msg aacc-msg-ok" id="aacc-done" role="status"></div>
+</section>
+
+<details class="aacc-card aacc-ref">
+  <summary>Consultar a relação de atividades, cargas horárias máximas e comprovantes (Anexo I das Normas de AACC)</summary>
+  <div class="aacc-table-wrap" style="margin-top:.8rem">
+    <table class="aacc-table" id="aacc-ref"><thead><tr><th>Código</th><th>Atividade</th><th>Máximo por atividade</th><th>Máximo total</th><th>Comprovante</th></tr></thead><tbody></tbody></table>
+  </div>
+  <p class="aacc-hint" style="margin-top:.6rem">Cargas horárias em horas (1 h = 1,2 h-a). Não são computadas atividades já utilizadas em outro componente curricular (disciplinas, estágio obrigatório, TCC ou extensão curricularizada).</p>
+</details>
+
+<script>
+(function () {
+  'use strict';
+  var root = document.getElementById('aacc-app');
+  if (!root || root.getAttribute('data-ready')) return;
+  root.setAttribute('data-ready', '1');
+
+  /* ------------------------------------------------------------------ configuração */
+  var PDFLIB_URL = 'https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js';
+  var PDFJS_URL = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js';
+  var PDFJS_WORKER_URL = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.worker.min.js';
+  var MAX_FILE_MB = 20;
+  var AVISO_TAMANHO_MB = 20;   // acima deste tamanho, o aluno é alertado de que o envio pode ser recusado
+  var LINKS = {
+    pai: 'https://atendimento.ufsc.br/otrs/customer.pl?Action=NewTicketWizard;QueueID=393', // PAI – Secretaria dos Cursos do Campus Blumenau
+    assina: 'https://assina.ufsc.br',         // Assina UFSC
+    govbr: 'https://assinador.iti.br'         // Assinador gov.br (ITI)
+  };
+  var CIDADE = 'Blumenau';
+  var CURSO = 'Engenharia de Controle e Automação';
+  var TURNO = 'Integral';
+  var CURRICULOS = { '2014-1': { h: 120, ha: 144 }, '2023-2': { h: 60, ha: 72 } };
+  var PRIMEIRO_ANO = 2014;
+  var LOGO_UFSC = 'data:image/jpeg;base64,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';
+  var BRASAO = 'data:image/png;base64,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';
+
+  var CERT = 'Certificado ou atestado';
+  var CERT_REL = 'Certificado e relatório de atividades (cadastrado na respectiva Pró-Reitoria, quando for o caso)';
+  /* Anexo I das Normas de AACC. tipo: 'semestre' (limite por semestre), 'unidade' (limite por unidade),
+     'estagio' (30 h a cada 6 meses; tratado como 30 h por semestre letivo do período informado). */
+  var ITENS = [
+    { c: 1, tipo: 'semestre', max: 30, total: 60, comp: CERT_REL, curto: 'Iniciação à docência, pesquisa ou extensão (20h semanais)',
+      nome: 'Atividades de iniciação à docência (ex.: monitoria), pesquisa ou extensão de 20h semanais (com ou sem bolsa)' },
+    { c: 2, tipo: 'semestre', max: 20, total: 60, comp: CERT_REL, curto: 'Bolsa Permanência (20h semanais)',
+      nome: 'Atividades relacionadas com Bolsa Permanência (20h semanais)' },
+    { c: 3, tipo: 'semestre', max: 30, total: 60, comp: CERT_REL, curto: 'ONG, incubadora de cooperativas ou empresa júnior',
+      nome: 'Participação em organizações não governamentais, incubadoras de cooperativas e empresas juniores' },
+    { c: 4, tipo: 'estagio', max: 30, total: 60, comp: 'Relatório com atividades vinculadas à área de formação', curto: 'Estágio não obrigatório',
+      nome: 'Estágio não obrigatório',
+      regra: '30 h para cada 6 meses de estágio. Para períodos inferiores a 6 meses, pontua-se 1 h a cada 4 h de estágio, com limite de 30 h.' },
+    { c: 5, tipo: 'unidade', max: 10, total: 40, comp: 'Cópia da publicação ou carta de aceite', curto: 'Publicação científica completa',
+      nome: 'Publicação científica completa' },
+    { c: 6, tipo: 'unidade', max: 10, total: 40, comp: CERT, curto: 'Palestrante em evento de área afim',
+      nome: 'Participação como palestrante (oral ou painel) em eventos de áreas afins do curso de Eng. de Controle e Automação: congressos, simpósios, palestras, cursos ou oficinas' },
+    { c: 7, tipo: 'unidade', max: 10, total: 40, comp: CERT, curto: 'Ouvinte em evento de área afim',
+      nome: 'Participação como ouvinte em eventos de áreas afins do curso de Eng. de Controle e Automação: congressos, simpósios, palestras ou oficinas' },
+    { c: 8, tipo: 'unidade', max: 15, total: 30, comp: CERT, curto: 'Organização de evento acadêmico ou científico',
+      nome: 'Organização de eventos acadêmicos ou científicos' },
+    { c: 9, tipo: 'unidade', max: 2, total: 20, comp: CERT, curto: 'Ouvinte em defesa de monografia, dissertação ou tese',
+      nome: 'Participação como ouvinte em defesa de monografias, dissertações ou teses' },
+    { c: 10, tipo: 'unidade', max: 1, total: 10, comp: CERT, curto: 'Ouvinte em apresentação de Estágio Curricular Obrigatório',
+      nome: 'Participação como ouvinte em apresentação de Estágio Curricular Obrigatório' },
+    { c: 11, tipo: 'unidade', max: 8, total: 40, comp: CERT, curto: 'Curso concluído em área afim',
+      nome: 'Cursos concluídos em áreas afins do curso de Eng. de Controle e Automação' },
+    { c: 12, tipo: 'semestre', max: 2, total: 10, comp: CERT, curto: 'Diretoria do Ramo Estudantil do IEEE ou entidade análoga',
+      nome: 'Participação na diretoria do Ramo Estudantil do IEEE (Institute of Electrical and Electronics Engineers), de Capítulos do Ramo Estudantil e/ou de entidades internacionais com objetivos análogos' },
+    { c: 13, tipo: 'semestre', max: 2, total: 10, comp: CERT, curto: 'Sociedade técnica e científica ou entidade de classe',
+      nome: 'Participação em sociedades técnicas e científicas e em entidades de classe (ex.: IEEE, Sociedade Brasileira de Automática – SBA, CIGRE, CREA-Jr etc.)' },
+    { c: 14, tipo: 'unidade', max: 4, total: 20, comp: CERT, curto: 'Visita técnica', nome: 'Visita técnica' },
+    { c: 15, tipo: 'unidade', max: 4, total: 40, comp: CERT, curto: 'Voluntariado',
+      nome: 'Participação em atividades de voluntariado (doação de sangue, pedágio beneficente etc.)' },
+    { c: 16, tipo: 'semestre', max: 10, total: 20, comp: CERT, curto: 'Organização de eventos culturais',
+      nome: 'Participação na organização de eventos culturais' },
+    { c: 17, tipo: 'semestre', max: 10, total: 40, comp: 'Cópia da portaria de nomeação', curto: 'Órgão colegiado (assiduidade de 75% ou mais)',
+      nome: 'Participação em órgãos colegiados com assiduidade maior ou igual a 75%' },
+    { c: 18, tipo: 'semestre', max: 10, total: 20, comp: CERT, curto: 'Curso de idiomas', nome: 'Curso de idiomas' },
+    { c: 19, tipo: 'semestre', max: 10, total: 20, curto: 'Diretoria de entidade de representação estudantil',
+      comp: 'Ata da posse da chapa ou ata do resultado do processo eleitoral; e comprovação da realização periódica das reuniões',
+      nome: 'Membro de entidade de representação estudantil (presidente, vice-presidente, 1º e 2º tesoureiro, secretário-geral e 1º secretário)' },
+    { c: 20, tipo: 'semestre', max: 10, total: 20, comp: CERT, curto: 'Organização de coletivos na UFSC',
+      nome: 'Participação na organização de coletivos na UFSC' }
+  ];
+  var ITEM = {};
+  ITENS.forEach(function (it) { ITEM[it.c] = it; });
+
+  /* ------------------------------------------------------------------ utilidades */
+  function $(id) { return document.getElementById(id); }
+  function el(tag, attrs, children) {
+    var n = document.createElement(tag);
+    if (attrs) Object.keys(attrs).forEach(function (k) {
+      if (k === 'text') n.textContent = attrs[k];
+      else if (k === 'class') n.className = attrs[k];
+      else if (attrs[k] !== false && attrs[k] != null) n.setAttribute(k, attrs[k] === true ? '' : attrs[k]);
+    });
+    (children || []).forEach(function (c) { if (c != null) n.appendChild(typeof c === 'string' ? document.createTextNode(c) : c); });
+    return n;
+  }
+  function b64(dataUrl) {
+    var bin = atob(dataUrl.split(',')[1]), out = new Uint8Array(bin.length);
+    for (var i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
+    return out;
+  }
+  function fmtN(n) { return (Math.round(n * 10) / 10).toString().replace('.', ','); }
+  function fmtH(n) { return fmtN(n) + ' h'; }
+  // carga horária digitada: aceita vírgula ou ponto; retorna número ou NaN
+  function lerHoras(v) {
+    var t = String(v == null ? '' : v).trim().replace(/\s+/g, '').replace(',', '.');
+    return /^\d+(\.\d+)?$/.test(t) ? Number(t) : NaN;
+  }
+  function fmtHA(n) { return (Math.round(n * 1.2 * 10) / 10).toString().replace('.', ',') + ' h-a'; }
+  function fmtMB(b) { return b < 1024 * 1024 ? Math.max(1, Math.round(b / 1024)) + ' KB' : (b / 1048576).toFixed(1).replace('.', ',') + ' MB'; }
+  function limiteTxt(it) {
+    if (it.tipo === 'unidade') return it.max + ' h por unidade';
+    if (it.tipo === 'estagio') return it.max + ' h a cada 6 meses de estágio';
+    return it.max + ' h por semestre';
+  }
+  var MESES = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function dataCurta(d) { return pad(d.getDate()) + '/' + pad(d.getMonth() + 1) + '/' + d.getFullYear(); }
+  function dataExtenso(d) { return d.getDate() + ' de ' + MESES[d.getMonth()] + ' de ' + d.getFullYear(); }
+
+  function semestres() {
+    var now = new Date(), y = now.getFullYear(), out = [];
+    for (var a = y; a >= PRIMEIRO_ANO; a--) { if (a < y || now.getMonth() >= 6) out.push(a + '-2'); out.push(a + '-1'); }
+    return out;
+  }
+  function semIdx(s) { var p = s.split('-'); return Number(p[0]) * 2 + Number(p[1]) - 1; }
+  function nSem(e) { return (e.ini && e.fim) ? semIdx(e.fim) - semIdx(e.ini) + 1 : 0; }
+  function periodoTxt(e) { return !e.ini ? '' : (e.ini === e.fim ? e.ini : e.ini + ' a ' + e.fim); }
+
+  function loadScript(url, globalName) {
+    if (window[globalName]) return Promise.resolve(window[globalName]);
+    return new Promise(function (res, rej) {
+      var s = document.createElement('script');
+      s.src = url; s.async = true;
+      s.onload = function () { window[globalName] ? res(window[globalName]) : rej(new Error('Biblioteca não disponível: ' + globalName)); };
+      s.onerror = function () { rej(new Error('Não foi possível carregar ' + url + '. Verifique sua conexão com a internet.')); };
+      document.head.appendChild(s);
+    });
+  }
+  var pdfLibP = null, pdfJsP = null;
+  function getPdfLib() { return pdfLibP || (pdfLibP = loadScript(PDFLIB_URL, 'PDFLib').catch(function (e) { pdfLibP = null; throw e; })); }
+  function getPdfJs() {
+    return pdfJsP || (pdfJsP = loadScript(PDFJS_URL, 'pdfjsLib').then(function (lib) {
+      lib.GlobalWorkerOptions.workerSrc = PDFJS_WORKER_URL; return lib;
+    }).catch(function (e) { pdfJsP = null; throw e; }));
+  }
+
+  /* ------------------------------------------------------------------ estado */
+  var seq = 0, fseq = 0;
+  var state = { nome: '', mat: '', curr: '', entries: [], showAll: false, touched: {}, dirty: false };
+  function novaEntrada() {
+    return { id: ++seq, item: '', desc: '', ini: '', fim: '', horas: '', files: [], touched: {}, refs: null };
+  }
+
+  /* ------------------------------------------------------------------ validação */
+  // números das atividades em forma compacta: "nº 1, 3, 5 a 9" (no máximo 6 trechos)
+  function faixaNums(es) {
+    var ns = es.map(function (e) { return state.entries.indexOf(e) + 1; }).sort(function (a, b) { return a - b; });
+    var partes = [], i = 0;
+    while (i < ns.length) {
+      var j = i;
+      while (j + 1 < ns.length && ns[j + 1] === ns[j] + 1) j++;
+      partes.push(j - i >= 2 ? ns[i] + ' a ' + ns[j] : (j > i ? ns[i] + ', ' + ns[j] : String(ns[i])));
+      i = j + 1;
+    }
+    return 'nº ' + (partes.length > 6 ? partes.slice(0, 6).join(', ') + ' e outras (' + ns.length + ' no total)' : partes.join(', '));
+  }
+  function validar() {
+    var r = { campos: {}, ent: {}, grupos: {}, globais: [], avisos: [], total: 0, ok: true };
+    function erroCampo(k, m) { r.campos[k] = m; r.ok = false; }
+    var nome = state.nome.trim().replace(/\s+/g, ' ');
+    if (!nome) erroCampo('nome', 'Informe o nome completo.');
+    else if (nome.split(' ').length < 2) erroCampo('nome', 'Informe o nome completo (nome e sobrenome).');
+    var mat = state.mat.trim();
+    if (!mat) erroCampo('mat', 'Informe a matrícula.');
+    else if (!/^\d{6,12}$/.test(mat)) erroCampo('mat', 'A matrícula deve conter apenas números.');
+    if (!state.curr) erroCampo('curr', 'Selecione o currículo ao qual você está vinculado(a).');
+    if (!state.entries.length) { r.globais.push('Adicione pelo menos uma atividade.'); r.ok = false; }
+
+    state.entries.forEach(function (e, idx) {
+      var er = { item: [], periodo: [], horas: [], files: [], limite: false };
+      r.ent[e.id] = er;
+      var it = ITEM[e.item];
+      if (!it) er.item.push({ req: true, m: 'Selecione o tipo de atividade.' });
+      if (!e.ini || !e.fim) er.periodo.push({ req: true, m: 'Informe os semestres de início e de término.' });
+      else if (semIdx(e.fim) < semIdx(e.ini)) er.periodo.push({ m: 'O semestre de término não pode ser anterior ao de início.' });
+      var hs = String(e.horas).trim(), h = lerHoras(hs);
+      e._h = 0;
+      if (!hs) er.horas.push({ req: true, m: 'Informe a carga horária demandada.' });
+      else if (isNaN(h) || h <= 0) er.horas.push({ m: 'Informe a carga horária em horas, maior que zero (ex.: 10 ou 10,5).' });
+      else if (Math.abs(h * 2 - Math.round(h * 2)) > 1e-9) er.horas.push({ m: 'A carga horária deve ser informada em passos de meia hora (ex.: 10 ou 10,5).' });
+      else {
+        e._h = h;
+        if (it) {
+          if (it.tipo === 'unidade' && h > it.max) {
+            er.horas.push({ m: 'A carga horária informada (' + fmtH(h) + ') ultrapassa o limite individual do código ' + it.c + ': ' + it.max + ' h por unidade. Registre cada unidade (evento, curso, publicação etc.) em um bloco separado.' });
+            er.limite = true;
+          } else if (it.tipo !== 'unidade' && nSem(e) > 0) {
+            var lim = it.max * nSem(e);
+            if (h > lim) {
+              er.horas.push({ m: 'A carga horária informada (' + fmtH(h) + ') ultrapassa o limite individual do código ' + it.c + ': ' + limiteTxt(it) + ' × ' + nSem(e) + ' semestre(s) no período informado = ' + lim + ' h.' });
+              er.limite = true;
+            }
+          }
+        }
+      }
+      if (!e.files.length) er.files.push({ req: true, m: 'Anexe o comprovante desta atividade.' });
+      e.files.forEach(function (f) {
+        if (f.status === 'checking') er.files.push({ m: 'Aguarde a verificação do arquivo "' + f.name + '".' });
+        if (f.status === 'error') er.files.push({ m: 'Remova ou substitua o arquivo "' + f.name + '": ' + f.msg });
+      });
+      if (it) r.total += e._h;
+    });
+
+    // limites globais (por item) e sobreposição de semestres
+    ITENS.forEach(function (it) {
+      var es = state.entries.filter(function (e) { return Number(e.item) === it.c; });
+      if (!es.length) return;
+      var soma = es.reduce(function (a, e) { return a + e._h; }, 0);
+      var g = { soma: soma, erro: false, entradas: es };
+      r.grupos[it.c] = g;
+      var nums = faixaNums(es);
+      if (soma > it.total) {
+        g.erro = true;
+        var m = es.length === 1
+          ? 'A carga horária informada (' + fmtH(soma) + ') ultrapassa o limite total do código ' + it.c + ': ' + it.total + ' h.'
+          : 'A soma das cargas horárias demandadas no código ' + it.c + ' (' + fmtH(soma) + ', atividades ' + nums + ') ultrapassa o limite total do código: ' + it.total + ' h.';
+        es.forEach(function (e) { r.ent[e.id].horas.push({ m: m }); r.ent[e.id].limite = true; });
+      }
+      if (it.tipo !== 'unidade' && es.length > 1) {
+        var sems = {};
+        var validos = es.filter(function (e) { return nSem(e) > 0; });
+        validos.forEach(function (e) { for (var k = semIdx(e.ini); k <= semIdx(e.fim); k++) sems[k] = 1; });
+        var cap = Object.keys(sems).length * it.max;
+        var somaV = validos.reduce(function (a, e) { return a + e._h; }, 0);
+        if (validos.length > 1 && somaV > cap) {
+          g.erro = true;
+          var numsV = faixaNums(validos);
+          var m2 = 'No código ' + it.c + ', as atividades ' + numsV + ' somam ' + fmtH(somaV) + ' em ' + Object.keys(sems).length + ' semestre(s) distinto(s), acima do limite de ' + limiteTxt(it) + ' (máximo de ' + cap + ' h nesses semestres).';
+          validos.forEach(function (e) { r.ent[e.id].horas.push({ m: m2 }); r.ent[e.id].limite = true; });
+        }
+      }
+      if (es.some(function (e) { return r.ent[e.id].limite; })) g.erro = true;
+    });
+
+    Object.keys(r.ent).forEach(function (id) {
+      var er = r.ent[id];
+      if (er.item.length || er.periodo.length || er.horas.length || er.files.length) r.ok = false;
+    });
+    var cur = CURRICULOS[state.curr];
+    if (cur && r.total > cur.h) {
+      r.avisos.push('O total demandado (' + fmtH(r.total) + ') é maior que a carga horária de AACC exigida no currículo ' + state.curr + ' (' + cur.h + ' h). O excedente não será contabilizado para integralização curricular.');
+    }
+    return r;
+  }
+
+  /* ------------------------------------------------------------------ interface */
+  var SEMS = semestres();
+  function semSelect(id) {
+    var s = el('select', { id: id }, [el('option', { value: '', text: 'Selecione…' })]);
+    SEMS.forEach(function (v) { s.appendChild(el('option', { value: v, text: v })); });
+    return s;
+  }
+  function itemSelect(id) {
+    var s = el('select', { id: id }, [el('option', { value: '', text: 'Selecione o tipo de atividade…' })]);
+    ITENS.forEach(function (it) { s.appendChild(el('option', { value: String(it.c), text: it.c + ' – ' + it.curto })); });
+    return s;
+  }
+
+  function montarEntrada(e) {
+    var p = 'aacc-e' + e.id + '-';
+    var title = el('h4', { class: 'aacc-entry-title' });
+    var rm = el('button', { type: 'button', class: 'aacc-btn aacc-btn-ghost', text: 'Remover' });
+    var sel = itemSelect(p + 'item');
+    var info = el('div', { class: 'aacc-iteminfo' });
+    var selErr = el('div', { class: 'aacc-field-err', id: p + 'item-err' });
+    var desc = el('input', { type: 'text', id: p + 'desc', maxlength: '90', placeholder: 'Ex.: Monitoria de Cálculo I; Congresso Brasileiro de Automática 2024' });
+    var ini = semSelect(p + 'ini'), fim = semSelect(p + 'fim');
+    var perErr = el('div', { class: 'aacc-field-err', id: p + 'per-err' });
+    var horas = el('input', { type: 'text', id: p + 'horas', inputmode: 'decimal', autocomplete: 'off', maxlength: '6', placeholder: 'Ex.: 10 ou 10,5' });
+    var lim = el('div', { class: 'aacc-limit', id: p + 'lim' });
+    var hErr = el('div', { class: 'aacc-field-err', id: p + 'horas-err' });
+    var fin = el('input', { type: 'file', id: p + 'file', class: 'aacc-vh', tabindex: '-1', 'aria-hidden': 'true', multiple: true, accept: '.pdf,.jpg,.jpeg,.png,application/pdf,image/jpeg,image/png' });
+    var fbtn = el('button', { type: 'button', class: 'aacc-btn aacc-btn-secondary', text: 'Anexar comprovante' });
+    fbtn.addEventListener('click', function () { fin.click(); });
+    var fhint = el('span', { class: 'aacc-hint', text: 'PDF, JPG ou PNG (até ' + MAX_FILE_MB + ' MB cada). É possível anexar mais de um arquivo (ex.: certificado e relatório).' });
+    var flist = el('ul', { class: 'aacc-files', id: p + 'files' });
+    var fErr = el('div', { class: 'aacc-field-err', id: p + 'files-err' });
+
+    var box = el('section', { class: 'aacc-entry', 'data-id': String(e.id) }, [
+      el('div', { class: 'aacc-entry-head' }, [title, rm]),
+      el('div', { class: 'aacc-grid' }, [
+        el('div', { class: 'aacc-col-12' }, [el('label', { class: 'aacc-label', for: p + 'item', text: 'Tipo de atividade (código do Anexo I)' }), sel, info, selErr]),
+        el('div', { class: 'aacc-col-12' }, [el('label', { class: 'aacc-label', for: p + 'desc' }, ['Descrição resumida ', el('span', { class: 'aacc-opt', text: '(opcional)' })]), desc]),
+        el('div', { class: 'aacc-col-4' }, [el('label', { class: 'aacc-label', for: p + 'ini', text: 'Semestre de início' }), ini]),
+        el('div', { class: 'aacc-col-4' }, [el('label', { class: 'aacc-label', for: p + 'fim', text: 'Semestre de término' }), fim]),
+        el('div', { class: 'aacc-col-4' }, [el('label', { class: 'aacc-label', for: p + 'horas', text: 'Carga horária demandada (h)' }), horas]),
+        el('div', { class: 'aacc-col-12', style: 'margin-top:-.4rem' }, [perErr, el('div', { class: 'aacc-hint', text: 'Carga horária em horas, com passo de meia hora (ex.: 10 ou 10,5).' }), lim, hErr]),
+        el('div', { class: 'aacc-col-12 aacc-drop' }, [
+          el('span', { class: 'aacc-label', text: 'Comprovante(s)' }),
+          el('div', { class: 'aacc-file-row' }, [fin, fbtn, fhint]), flist, fErr])
+      ])
+    ]);
+
+    e.refs = { box: box, title: title, sel: sel, info: info, selErr: selErr, desc: desc, ini: ini, fim: fim, perErr: perErr, horas: horas, lim: lim, hErr: hErr, flist: flist, fErr: fErr };
+
+    sel.addEventListener('change', function () { e.item = sel.value; e.touched.item = true; mudou(); });
+    desc.addEventListener('input', function () { e.desc = desc.value; state.dirty = true; });
+    function per() {
+      e.ini = ini.value; e.fim = fim.value;
+      if (e.ini && !e.fim) { e.fim = e.ini; fim.value = e.ini; }
+      if (e.ini && e.fim) e.touched.periodo = true;
+      mudou();
+    }
+    ini.addEventListener('change', per);
+    fim.addEventListener('change', function () { e.fim = fim.value; e.ini = ini.value; e.touched.periodo = true; mudou(); });
+    horas.addEventListener('input', function () { e.horas = horas.value; mudou(); });
+    horas.addEventListener('blur', function () {
+      var v = lerHoras(horas.value);
+      // só reescreve (com vírgula) valores válidos, múltiplos de meia hora; os demais ficam como digitados
+      if (!isNaN(v) && v > 0 && Math.abs(v * 2 - Math.round(v * 2)) < 1e-9) { horas.value = fmtN(v); e.horas = horas.value; }
+      e.touched.horas = true; mudou();
+    });
+    fin.addEventListener('change', function () { adicionarArquivos(e, fin.files); fin.value = ''; });
+    var drop = box.querySelector('.aacc-drop');
+    drop.addEventListener('dragover', function (ev) { ev.preventDefault(); drop.classList.add('aacc-dragover'); });
+    drop.addEventListener('dragleave', function () { drop.classList.remove('aacc-dragover'); });
+    drop.addEventListener('drop', function (ev) { ev.preventDefault(); drop.classList.remove('aacc-dragover'); if (ev.dataTransfer && ev.dataTransfer.files) adicionarArquivos(e, ev.dataTransfer.files); });
+    rm.addEventListener('click', function () {
+      var temDados = e.item || e.horas || e.files.length || e.desc;
+      if (temDados && !window.confirm('Remover esta atividade e seus comprovantes?')) return;
+      state.entries = state.entries.filter(function (x) { return x !== e; });
+      box.parentNode.removeChild(box);
+      mudou();
+    });
+    return box;
+  }
+
+  function adicionarArquivos(e, fileList) {
+    Array.prototype.forEach.call(fileList, function (file) {
+      var f = { id: ++fseq, file: file, name: file.name, size: file.size, kind: '', status: 'checking', msg: '', pages: 0, modo: '' };
+      e.files.push(f);
+      verificarArquivo(f).then(mudou, mudou);
+    });
+    e.touched.files = true;
+    mudou();
+  }
+
+  function verificarArquivo(f) {
+    var nm = f.name.toLowerCase(), tp = f.file.type;
+    var isPdf = tp === 'application/pdf' || /\.pdf$/.test(nm);
+    var isImg = /^image\/(jpeg|png)$/.test(tp) || /\.(jpe?g|png)$/.test(nm);
+    function erro(m) { f.status = 'error'; f.msg = m; }
+    if (f.size > MAX_FILE_MB * 1048576) { erro('arquivo maior que ' + MAX_FILE_MB + ' MB. Reduza o tamanho e anexe novamente.'); return Promise.resolve(); }
+    if (/\.(heic|heif)$/.test(nm)) { erro('formato HEIC não é aceito. Converta a foto para JPG ou PDF.'); return Promise.resolve(); }
+    if (!isPdf && !isImg) { erro('formato não aceito. Use PDF, JPG ou PNG.'); return Promise.resolve(); }
+    if (f.size === 0) { erro('arquivo vazio.'); return Promise.resolve(); }
+    if (isImg) {
+      f.kind = 'image';
+      return lerImagem(f.file).then(function (img) {
+        f.status = 'ok'; f.pages = 1; f.msg = 'Imagem ' + img.width + '×' + img.height + ' px';
+        if (img.close) img.close();
+      }, function () { erro('não foi possível ler a imagem. Verifique se o arquivo não está corrompido.'); });
+    }
+    f.kind = 'pdf';
+    return f.file.arrayBuffer().then(function (buf) {
+      return getPdfLib().then(function (PL) {
+        // parseSpeed Fastest: sem pausas por setTimeout (que o navegador desacelera em abas em segundo plano)
+        return PL.PDFDocument.load(buf, { updateMetadata: false, parseSpeed: PL.ParseSpeeds.Fastest }).then(function (d) {
+          f.pages = d.getPageCount();
+          var girada = d.getPages().some(function (pg) { return pg.getRotation().angle % 360 !== 0; });
+          f.modo = girada ? 'raster' : 'vetor';
+          f.status = 'ok';
+          f.msg = 'PDF · ' + f.pages + (f.pages === 1 ? ' página' : ' páginas');
+        }, function (err) {
+          // PDF protegido ou com estrutura incomum: tenta abrir com o pdf.js (será convertido em imagem)
+          return getPdfJs().then(function (pdfjs) {
+            return pdfjs.getDocument({ data: new Uint8Array(buf.slice(0)) }).promise.then(function (doc) {
+              f.pages = doc.numPages; f.modo = 'raster'; f.status = 'ok';
+              f.msg = 'PDF · ' + f.pages + (f.pages === 1 ? ' página' : ' páginas') + ' · ' +
+                (/encrypt/i.test(String(err && err.message)) ? 'protegido contra edição; ' : '') + 'será incluído como imagem';
+              doc.destroy();
+            }, function (e2) {
+              if (e2 && e2.name === 'PasswordException') erro('PDF protegido por senha. Gere uma cópia sem senha e anexe novamente.');
+              else erro('arquivo PDF inválido ou corrompido.');
+            });
+          });
+        });
+      });
+    }).catch(function (e) { erro(e && e.message ? e.message : 'não foi possível ler o arquivo.'); });
+  }
+
+  function lerImagem(file) {
+    if (window.createImageBitmap) {
+      return createImageBitmap(file, { imageOrientation: 'from-image' }).catch(function () { return createImageBitmap(file); });
+    }
+    return new Promise(function (res, rej) {
+      var url = URL.createObjectURL(file), img = new Image();
+      img.onload = function () { res(img); setTimeout(function () { URL.revokeObjectURL(url); }, 0); };
+      img.onerror = function () { URL.revokeObjectURL(url); rej(new Error('img')); };
+      img.src = url;
+    });
+  }
+
+  function renderArquivos(e) {
+    var ul = e.refs.flist;
+    ul.textContent = '';
+    e.files.forEach(function (f) {
+      var rmf = el('button', { type: 'button', class: 'aacc-btn aacc-btn-ghost', 'aria-label': 'Remover arquivo ' + f.name, text: 'Remover' });
+      rmf.addEventListener('click', function () { e.files = e.files.filter(function (x) { return x !== f; }); mudou(); });
+      var meta = f.status === 'checking' ? 'verificando…' : (f.status === 'error' ? 'Erro: ' + f.msg : f.msg) + ' · ' + fmtMB(f.size);
+      ul.appendChild(el('li', { class: f.status === 'error' ? 'aacc-file-err' : '' }, [
+        el('div', {}, [el('div', { class: 'aacc-file-name', text: f.name }), el('div', { class: 'aacc-file-meta', text: meta })]), rmf]));
+    });
+  }
+
+  function mostrarErros(div, lista, input) {
+    div.textContent = '';
+    lista.forEach(function (m) { div.appendChild(el('p', { text: m })); });
+    if (input) {
+      if (lista.length) { input.setAttribute('aria-invalid', 'true'); input.setAttribute('aria-describedby', div.id); }
+      else { input.removeAttribute('aria-invalid'); input.removeAttribute('aria-describedby'); }
+    }
+  }
+
+  var ultimo = null;
+  function mudou() { state.dirty = true; $('aacc-done').textContent = ''; atualizar(); }
+
+  function atualizar() {
+    var r = validar();
+    ultimo = r;
+    // dados do aluno
+    [['nome', 'aacc-nome'], ['mat', 'aacc-mat'], ['curr', 'aacc-curr']].forEach(function (p) {
+      var show = state.showAll || state.touched[p[0]];
+      mostrarErros($(p[1] + '-err'), show && r.campos[p[0]] ? [r.campos[p[0]]] : [], $(p[1]));
+    });
+    var nomeAd = safe(state.nome);
+    if (!r.campos.nome && nomeAd.trim() && nomeAd !== state.nome.replace(/[\r\n\t]+/g, ' ').normalize('NFC')) {
+      $('aacc-nome-err').appendChild(el('p', { style: 'color:var(--a-warn)', text: 'Aviso: no PDF, o nome aparecerá como "' + nomeAd.trim() + '" (caracteres sem suporte nas fontes padrão foram adaptados).' }));
+    }
+    // atividades
+    $('aacc-empty').style.display = state.entries.length ? 'none' : '';
+    state.entries.forEach(function (e, i) {
+      var R = e.refs, er = r.ent[e.id], it = ITEM[e.item], n = i + 1;
+      R.title.textContent = 'Atividade ' + n;
+      R.title.appendChild(el('span', { class: 'aacc-badge', text: 'Comprovante nº ' + n }));
+      R.info.textContent = '';
+      if (it) {
+        var dl = el('dl');
+        [['Atividade', it.nome], ['Limite individual', it.regra || limiteTxt(it)],
+          ['Limite total', it.total + ' h'], ['Comprovante exigido', it.comp]].forEach(function (x) {
+          dl.appendChild(el('dt', { text: x[0] })); dl.appendChild(el('dd', { text: x[1] }));
+        });
+        R.info.appendChild(dl);
+      }
+      // limite disponível para esta atividade
+      var limTxt = '';
+      if (it) {
+        var outros = state.entries.reduce(function (a, x) { return a + (x !== e && Number(x.item) === it.c ? x._h : 0); }, 0);
+        var restante = Math.max(0, it.total - outros);
+        var indiv = it.tipo === 'unidade' ? it.max : (nSem(e) > 0 ? it.max * nSem(e) : null);
+        if (indiv != null) {
+          limTxt = 'Máximo para esta atividade: ' + fmtH(Math.min(indiv, restante)) +
+            (it.tipo === 'unidade' ? ' (' + it.max + ' h por unidade' : ' (' + limiteTxt(it) + ' × ' + nSem(e) + ' semestre(s)') +
+            '; restam ' + fmtH(restante) + ' do limite total de ' + it.total + ' h deste código).';
+        } else limTxt = 'Informe o período para calcular o limite desta atividade.';
+      }
+      R.lim.textContent = limTxt;
+      function vis(list, key) { return list.filter(function (x) { return !x.req || state.showAll || e.touched[key]; }).map(function (x) { return x.m; }); }
+      var eItem = vis(er.item, 'item'), ePer = vis(er.periodo, 'periodo'), eH = vis(er.horas, 'horas'), eF = vis(er.files, 'files');
+      mostrarErros(R.selErr, eItem, R.sel);
+      mostrarErros(R.perErr, ePer, null);
+      [R.ini, R.fim].forEach(function (s) { if (ePer.length) s.setAttribute('aria-invalid', 'true'); else s.removeAttribute('aria-invalid'); });
+      mostrarErros(R.hErr, eH, R.horas);
+      renderArquivos(e);
+      mostrarErros(R.fErr, eF, null);
+      R.box.classList.toggle('aacc-has-err', !!(eItem.length || ePer.length || eH.length || eF.length));
+    });
+    // resumo
+    var tb = $('aacc-summary').querySelector('tbody');
+    tb.textContent = '';
+    var itensUsados = ITENS.filter(function (it) { return r.grupos[it.c]; });
+    if (!itensUsados.length) tb.appendChild(el('tr', {}, [el('td', { colspan: '4', class: 'aacc-empty', text: 'Nenhuma atividade com tipo selecionado.' })]));
+    itensUsados.forEach(function (it) {
+      var g = r.grupos[it.c];
+      tb.appendChild(el('tr', { class: g.erro ? 'aacc-row-err' : '' }, [
+        el('td', { text: it.c + ' – ' + it.curto }), el('td', { class: 'aacc-num', text: fmtH(g.soma) }),
+        el('td', { class: 'aacc-num', text: it.total + ' h' }), el('td', { text: g.erro ? 'Limite ultrapassado' : 'Dentro do limite' })]));
+    });
+    var cur = CURRICULOS[state.curr], tot = $('aacc-total');
+    tot.textContent = '';
+    tot.appendChild(el('span', {}, ['Total demandado: ', el('strong', { text: fmtH(r.total) + ' (' + fmtHA(r.total) + ')' })]));
+    tot.appendChild(el('span', {}, ['Exigido no currículo: ', el('strong', { text: cur ? cur.h + ' h (' + cur.ha + ' h-a)' : '–' })]));
+    tot.appendChild(el('span', {}, ['Comprovantes: ', el('strong', { text: String(state.entries.length) })]));
+    var w = $('aacc-warn'); w.textContent = '';
+    r.avisos.forEach(function (m) { w.appendChild(el('div', { text: m })); });
+    var ge = $('aacc-errors'); ge.textContent = '';
+    var le = $('aacc-list-err'); le.textContent = '';
+    if (state.showAll && !r.ok) {
+      var qtd = Object.keys(r.campos).length + Object.keys(r.ent).filter(function (id) { var x = r.ent[id]; return x.item.length || x.periodo.length || x.horas.length || x.files.length; }).length;
+      ge.appendChild(el('strong', { text: 'Não foi possível gerar o PDF. Corrija os problemas indicados em vermelho (' + qtd + ' campo(s) ou atividade(s)).' }));
+      if (r.globais.length) { var ul = el('ul'); r.globais.forEach(function (m) { ul.appendChild(el('li', { text: m })); }); ge.appendChild(ul); }
+    }
+    if (state.showAll) r.globais.forEach(function (m) { le.appendChild(el('div', { text: m })); });
+  }
+
+  /* ------------------------------------------------------------------ PDF */
+  var WINANSI_EXTRA = '€‚ƒ„…†‡ˆ‰Š‹ŒŽ‘’“”•–—˜™š›œžŸ';
+  function codificavel(ch) { var c = ch.codePointAt(0); return (c >= 32 && c <= 126) || (c >= 160 && c <= 255) || WINANSI_EXTRA.indexOf(ch) >= 0; }
+  var TRANSLIT = { 'Ł': 'L', 'ł': 'l', 'Đ': 'D', 'đ': 'd', 'Ħ': 'H', 'ħ': 'h', 'ı': 'i', 'Ŀ': 'L', 'ŀ': 'l', 'ʼ': "'", '′': "'",
+    '‐': '-', '‑': '-', '‒': '-', '−': '-', '\u00a0': ' ', '\u2009': ' ', '\u202f': ' ' };
+  function safe(s) {
+    s = String(s == null ? '' : s).normalize('NFC').replace(/[\r\n\t]+/g, ' ');
+    var out = '';
+    for (var ch of s) {
+      if (codificavel(ch)) { out += ch; continue; }
+      if (TRANSLIT[ch]) { out += TRANSLIT[ch]; continue; }
+      var base = ch.normalize('NFD').replace(/[̀-ͯ]/g, '');
+      out += (base && Array.from(base).every(codificavel)) ? base : '?';
+    }
+    return out;
+  }
+
+  async function gerarPDF(progresso, snap) {
+    var PL = await getPdfLib();
+    var PDFDocument = PL.PDFDocument, StandardFonts = PL.StandardFonts, rgb = PL.rgb;
+    var doc = await PDFDocument.create();
+    var F = {
+      r: await doc.embedFont(StandardFonts.Helvetica), b: await doc.embedFont(StandardFonts.HelveticaBold),
+      i: await doc.embedFont(StandardFonts.HelveticaOblique),
+      tr: await doc.embedFont(StandardFonts.TimesRoman), tb: await doc.embedFont(StandardFonts.TimesRomanBold)
+    };
+    var logo = await doc.embedJpg(b64(LOGO_UFSC));
+    var brasao = await doc.embedPng(b64(BRASAO));
+    var PRETO = rgb(0, 0, 0), CINZA = rgb(0.35, 0.37, 0.4), CINZA_CLARO = rgb(0.9, 0.91, 0.93), LINHA = rgb(0.45, 0.47, 0.5),
+      AZUL = rgb(0.043, 0.31, 0.61), FAIXA = rgb(0.91, 0.94, 0.98);
+    var W = 595.28, H = 841.89, M = 36, CW = W - 2 * M;
+    var hoje = new Date();
+    var nome = snap.nome.trim().replace(/\s+/g, ' '), mat = snap.mat.trim(), cur = CURRICULOS[snap.curr];
+    var rodapes = [];   // páginas geradas (formulário e declaração): numeradas ao final
+    var faixas = [];    // páginas de comprovantes: numeradas ao final, na faixa superior
+
+    function T(page, s, x, y, o) {
+      o = o || {};
+      page.drawText(safe(s), { x: x, y: y, size: o.size || 9, font: o.font || F.r, color: o.color || PRETO });
+    }
+    function larg(s, font, size) { return font.widthOfTextAtSize(safe(s), size); }
+    function centro(page, s, cx, y, o) { o = o || {}; T(page, s, cx - larg(s, o.font || F.r, o.size || 9) / 2, y, o); }
+    function direita(page, s, xr, y, o) { o = o || {}; T(page, s, xr - larg(s, o.font || F.r, o.size || 9), y, o); }
+    function quebrar(s, font, size, maxW) {
+      var words = safe(s).split(' ').filter(Boolean), lines = [], line = '';
+      words.forEach(function (w) {
+        var t = line ? line + ' ' + w : w;
+        if (font.widthOfTextAtSize(t, size) <= maxW) { line = t; return; }
+        if (line) lines.push(line);
+        if (font.widthOfTextAtSize(w, size) > maxW) {
+          var part = '';
+          for (var ch of w) { if (font.widthOfTextAtSize(part + ch, size) > maxW) { lines.push(part); part = ch; } else part += ch; }
+          line = part;
+        } else line = w;
+      });
+      if (line) lines.push(line);
+      return lines.length ? lines : [''];
+    }
+    function caixa(page, x, y, w, h, o) {
+      o = o || {};
+      page.drawRectangle({ x: x, y: y, width: w, height: h, borderColor: o.border || LINHA, borderWidth: o.bw == null ? 0.6 : o.bw, color: o.fill, borderDashArray: o.dash });
+    }
+    // texto justificado com trechos em negrito
+    function rico(page, runs, x, y, maxW, size, lh, justificar) {
+      var words = [], cur2 = [];
+      runs.forEach(function (r) {
+        var s = safe(r.t), buf = '';
+        for (var ch of s) {
+          if (ch === ' ') { if (buf) { cur2.push({ t: buf, f: r.f }); buf = ''; } if (cur2.length) { words.push(cur2); cur2 = []; } }
+          else buf += ch;
+        }
+        if (buf) cur2.push({ t: buf, f: r.f });
+      });
+      if (cur2.length) words.push(cur2);
+      var esp = runs[0].f.widthOfTextAtSize(' ', size);
+      function ww(w) { return w.reduce(function (a, s) { return a + s.f.widthOfTextAtSize(s.t, size); }, 0); }
+      var lines = [], line = [], lw = 0;
+      words.forEach(function (w) {
+        var wd = ww(w), add = line.length ? esp + wd : wd;
+        if (!line.length || lw + add <= maxW) { line.push({ w: w, wd: wd }); lw += add; }
+        else { lines.push({ ws: line, w: lw }); line = [{ w: w, wd: wd }]; lw = wd; }
+      });
+      if (line.length) lines.push({ ws: line, w: lw, ultima: true });
+      lines.forEach(function (L) {
+        var gap = esp;
+        if (justificar && !L.ultima && L.ws.length > 1) gap = esp + (maxW - L.w) / (L.ws.length - 1);
+        var cx = x;
+        L.ws.forEach(function (o) {
+          var sx = cx;
+          o.w.forEach(function (s) { page.drawText(s.t, { x: sx, y: y, size: size, font: s.f, color: PRETO }); sx += s.f.widthOfTextAtSize(s.t, size); });
+          cx += o.wd + gap;
+        });
+        y -= lh;
+      });
+      return y;
+    }
+
+    /* ---------- página(s) do requerimento: A4 paisagem ---------- */
+    var PW = H, PH = W, PCW = PW - 2 * M;
+    function cabecalho(page) {
+      var top = PH - 30;
+      var lw = 42, lh = logo.height * lw / logo.width;
+      page.drawImage(logo, { x: M, y: top - lh + 2, width: lw, height: lh });
+      var y = top - 9;
+      ['UNIVERSIDADE FEDERAL DE SANTA CATARINA', 'CAMPUS BLUMENAU', 'CENTRO TECNOLÓGICO, DE CIÊNCIAS EXATAS E EDUCAÇÃO',
+        'COORDENADORIA DO CURSO DE ENGENHARIA DE CONTROLE E AUTOMAÇÃO'].forEach(function (s) {
+        centro(page, s, PW / 2, y, { font: F.b, size: 9 }); y -= 11;
+      });
+      page.drawLine({ start: { x: M, y: top - 48 }, end: { x: PW - M, y: top - 48 }, thickness: 1.2, color: PRETO });
+      return top - 62;
+    }
+    var COLS = [
+      { t: 'Nº comp.', w: 44, a: 'c' }, { t: 'Código', w: 44, a: 'c' }, { t: 'Atividade', w: 300, a: 'l' },
+      { t: 'Período (semestres)', w: 78, a: 'c' }, { t: 'CH demandada (h)', w: 60, a: 'c' },
+      { t: 'CH concedida (h)', w: 60, a: 'c' }, { t: 'Observações da comissão', w: PCW - 586, a: 'l' }
+    ];
+    var FS = 7.6, LH = 9.2, MINH = 16;
+    function cabecalhoTabela(page, y) {
+      var x = M, h = COLS.reduce(function (a, c) { return Math.max(a, quebrar(c.t, F.b, 7, c.w - 4).length * 8 + 9); }, 22);
+      COLS.forEach(function (c) {
+        caixa(page, x, y - h, c.w, h, { fill: CINZA_CLARO });
+        var ls = quebrar(c.t, F.b, 7, c.w - 4), yy = y - h / 2 + (ls.length - 1) * 4 - 2.5;
+        ls.forEach(function (l) { centro(page, l, x + c.w / 2, yy, { font: F.b, size: 7 }); yy -= 8; });
+        x += c.w;
+      });
+      return y - h;
+    }
+    function linhaTabela(page, y, vals, alturas) {
+      var x = M, h = alturas;
+      COLS.forEach(function (c, k) {
+        caixa(page, x, y - h, c.w, h);
+        var ls = vals[k], yy = y - (h - ls.length * LH) / 2 - FS + 0.5;
+        ls.forEach(function (l) {
+          if (c.a === 'c') centro(page, l, x + c.w / 2, yy, { size: FS }); else T(page, l, x + 3, yy, { size: FS });
+          yy -= LH;
+        });
+        x += c.w;
+      });
+      return y - h;
+    }
+    function novaPaginaReq(continuacao) {
+      var pg = doc.addPage([PW, PH]); rodapes.push(pg);
+      var yy = cabecalho(pg);
+      if (continuacao) {
+        centro(pg, 'REQUERIMENTO DE REGISTRO DE AACC (continuação) – ' + nome + ' – matrícula ' + mat, PW / 2, yy, { font: F.b, size: 9 });
+        yy -= 10;
+      }
+      return { page: pg, y: yy };
+    }
+
+    var np = novaPaginaReq(false), pagina = np.page, y = np.y;
+    centro(pagina, 'REQUERIMENTO DE REGISTRO DE ATIVIDADES ACADÊMICO-CIENTÍFICO-CULTURAIS (AACC)', PW / 2, y, { font: F.b, size: 10.5 });
+    y -= 12;
+    // quadro de identificação (uma linha)
+    (function () {
+      var campos = [['Nome do(a) aluno(a)', nome, 0], ['Matrícula', mat, 70], ['Curso', CURSO, 172], ['Turno', TURNO, 48],
+        ['Currículo', snap.curr + ' (' + cur.h + ' h / ' + cur.ha + ' h-a)', 118], ['Data de preenchimento', dataCurta(hoje), 88]];
+      campos[0][2] = PCW - campos.reduce(function (a, c) { return a + c[2]; }, 0);
+      var x = M, h = 26;
+      campos.forEach(function (c) {
+        caixa(pagina, x, y - h, c[2], h);
+        T(pagina, c[0], x + 4, y - 9, { size: 6.5, color: CINZA });
+        var sz = 9;
+        while (sz > 6.5 && larg(c[1], F.b, sz) > c[2] - 8) sz -= 0.25;
+        T(pagina, quebrar(c[1], F.b, sz, c[2] - 8)[0], x + 4, y - 21, { font: F.b, size: sz });
+        x += c[2];
+      });
+      y -= h;
+    })();
+    y -= 11;
+    y = rico(pagina, [
+      { t: 'À Comissão de Análise das AACCs do Curso de Graduação em Engenharia de Controle e Automação: solicito o registro da carga horária das atividades acadêmico-científico-culturais relacionadas abaixo, nos termos das Normas de AACC do curso. Os comprovantes seguem anexos, numerados conforme a coluna ', f: F.r },
+      { t: '“Nº comp.”', f: F.b }, { t: '.', f: F.r }], M, y, PCW, 8.5, 11, true);
+    y -= 3;
+    y = cabecalhoTabela(pagina, y);
+
+    var LIM_INF = 48;
+    var ASSIN_BH = 92;                       // altura dos quadros de assinatura
+    var ASSIN_H = ASSIN_BH + 8 + 26;         // quadros + espaço + observações
+    var comprovantesDesde = 0, pagReq = 0, pagTermo = 0;
+    function medirLinhas() {
+      return snap.entries.map(function (e, i) {
+        var it = ITEM[e.item];
+        var atv = it.curto + (e.desc.trim() ? ' – ' + e.desc.trim() : '');
+        var vals = [[String(i + 1)], [String(it.c)], quebrar(atv, F.r, FS, COLS[2].w - 6), quebrar(periodoTxt(e), F.r, FS, COLS[3].w - 4), [fmtN(e._h)], [''], ['']];
+        var h = Math.max(MINH, vals[2].length * LH + (MINH - LH) / 1.6, vals[3].length * LH + (MINH - LH) / 1.6);
+        return { vals: vals, h: h };
+      });
+    }
+    function altura(ls) { return ls.reduce(function (a, L) { return a + L.h; }, 0); }
+    // linha de total + espaço + assinaturas + observações, que ficam após a última linha da tabela
+    var TAIL = 16 + 8 + ASSIN_H;
+    // tenta manter o requerimento em uma única página, compactando a tabela se necessário
+    var NIVEIS = [[7.6, 9.2, 16], [6.9, 8.0, 13], [6.4, 7.3, 11]], linhas, disponivel = y - (LIM_INF + TAIL);
+    for (var nv = 0; nv < NIVEIS.length; nv++) {
+      FS = NIVEIS[nv][0]; LH = NIVEIS[nv][1]; MINH = NIVEIS[nv][2];
+      linhas = medirLinhas();
+      if (altura(linhas) <= disponivel) break;
+    }
+    if (altura(linhas) > disponivel) { FS = NIVEIS[0][0]; LH = NIVEIS[0][1]; MINH = NIVEIS[0][2]; linhas = medirLinhas(); }
+    linhas.forEach(function (L, idx) {
+      var restoLinhas = altura(linhas.slice(idx));
+      var quebra = false;
+      if (y - restoLinhas - TAIL < LIM_INF) {
+        if (y - L.h < LIM_INF) quebra = true;                                            // a linha não cabe
+        else if (linhas.length - idx <= 2 && y - restoLinhas >= LIM_INF) quebra = true;  // não deixa as assinaturas sozinhas
+      }
+      if (quebra) {
+        np = novaPaginaReq(true); pagina = np.page;
+        y = cabecalhoTabela(pagina, np.y);
+      }
+      y = linhaTabela(pagina, y, L.vals, L.h);
+    });
+    // linha de total
+    var total = snap.entries.reduce(function (a, e) { return a + e._h; }, 0);
+    (function () {
+      var h = 16, x = M, wLabel = COLS[0].w + COLS[1].w + COLS[2].w + COLS[3].w;
+      caixa(pagina, x, y - h, wLabel, h, { fill: CINZA_CLARO });
+      direita(pagina, 'TOTAL DEMANDADO: ' + fmtH(total) + ' = ' + fmtHA(total) + '   (exigido no currículo ' + snap.curr + ': ' + cur.h + ' h = ' + cur.ha + ' h-a)', x + wLabel - 4, y - 11, { font: F.b, size: 7.5 });
+      x += wLabel;
+      caixa(pagina, x, y - h, COLS[4].w, h, { fill: CINZA_CLARO }); centro(pagina, fmtN(total), x + COLS[4].w / 2, y - 11, { font: F.b, size: 8 });
+      x += COLS[4].w;
+      caixa(pagina, x, y - h, COLS[5].w, h); x += COLS[5].w;
+      caixa(pagina, x, y - h, COLS[6].w, h);
+      y -= h;
+    })();
+    y -= 8;
+
+    if (y - ASSIN_H < LIM_INF) {
+      np = novaPaginaReq(true); pagina = np.page; y = np.y - 8;
+    }
+    pagReq = rodapes.length;
+    pagTermo = rodapes.length + 1;
+    comprovantesDesde = rodapes.length + 2;
+    // quadros de assinatura (lado a lado)
+    (function () {
+      var gap = 12, bw = (PCW - gap) / 2, bh = ASSIN_BH, top = y, base = top - bh;
+      var rectY = base + 15, rectH = bh - 38 - 15;
+      // aluno(a)
+      var x = M;
+      caixa(pagina, x, base, bw, bh);
+      T(pagina, 'ALUNO(A)', x + 8, top - 12, { font: F.b, size: 8.5 });
+      direita(pagina, CIDADE + ', ' + dataCurta(hoje) + '.', x + bw - 8, top - 12, { size: 7.6 });
+      var yy = top - 22;
+      quebrar('Declaro que as informações prestadas neste requerimento são verdadeiras e que as atividades relacionadas não foram aproveitadas para a integralização de outro componente curricular.', F.r, 7.1, bw - 16)
+        .slice(0, 2).forEach(function (l) { T(pagina, l, x + 8, yy, { size: 7.1 }); yy -= 8.5; });
+      caixa(pagina, x + 8, rectY, bw - 16, rectH, { border: AZUL, bw: 0.8, dash: [3, 2] });
+      centro(pagina, 'Assinatura digital do(a) aluno(a) – Assina UFSC ou gov.br (assine também a Declaração de Autenticidade, página ' + pagTermo + ')',
+        x + bw / 2, base + 5, { size: 6.8, color: CINZA });
+      // comissão
+      x = M + bw + gap;
+      caixa(pagina, x, base, bw, bh, { fill: rgb(0.975, 0.978, 0.982) });
+      T(pagina, 'USO DA COMISSÃO DE ANÁLISE DAS AACCs', x + 8, top - 12, { font: F.b, size: 8.5 });
+      T(pagina, 'Carga horária total concedida: ________ h (________ h-a)', x + 8, top - 26, { size: 7.6 });
+      direita(pagina, 'Data da análise: ____/____/________', x + bw - 8, top - 26, { size: 7.6 });
+      caixa(pagina, x + 8, rectY, bw - 16, rectH, { border: AZUL, bw: 0.8, dash: [3, 2], fill: rgb(1, 1, 1) });
+      centro(pagina, 'Assinatura do(a) membro da Comissão de Análise das AACCs', x + bw / 2, base + 5, { size: 6.8, color: CINZA });
+      y = base - 9;
+    })();
+    quebrar('Observações: (1) as colunas “CH concedida” e “Observações da comissão” são de preenchimento exclusivo da Comissão de Análise das AACCs; ' +
+      '(2) os comprovantes estão anexados a partir da página ' + comprovantesDesde + ', na ordem da coluna “Nº comp.”, e cada página de comprovante traz a sua identificação na faixa superior; ' +
+      '(3) cargas horárias expressas em horas (1 h = 1,2 h-a); (4) o(a) aluno(a) deve assinar digitalmente (Assina UFSC ou gov.br) este requerimento e a Declaração de Autenticidade (página ' + pagTermo + ') e enviar o arquivo à Comissão de Análise das AACCs pelo Portal de Atendimento Institucional (PAI).', F.r, 6.8, PCW).forEach(function (l) { T(pagina, l, M, y, { size: 6.8, color: CINZA }); y -= 8.2; });
+
+    /* ---------- declaração de autenticidade ---------- */
+    progresso('Montando a declaração de autenticidade…');
+    var d = doc.addPage([W, H]); rodapes.push(d);
+    (function () {
+      var bw2 = 50, bh2 = brasao.height * bw2 / brasao.width, top = H - 50;
+      d.drawImage(brasao, { x: W / 2 - bw2 / 2, y: top - bh2, width: bw2, height: bh2 });
+      var yy = top - bh2 - 13;
+      [['SERVIÇO PÚBLICO FEDERAL', F.tr], ['MINISTÉRIO DA EDUCAÇÃO', F.tr], ['UNIVERSIDADE FEDERAL DE SANTA CATARINA', F.tb],
+        ['CENTRO TECNOLÓGICO, DE CIÊNCIAS EXATAS E EDUCAÇÃO', F.tb], ['Rua João Pessoa, 2750. Velha', F.tr],
+        ['CEP: 89036-256 – Blumenau - SC', F.tr], ['blumenau.ufsc.br / blumenau@contato.ufsc.br', F.tr], ['Telefone: (48) 3721-6308', F.tr]]
+        .forEach(function (l) { centro(d, l[0], W / 2, yy, { font: l[1], size: 9.5 }); yy -= 11.5; });
+      yy -= 34;
+      centro(d, 'DECLARAÇÃO DE AUTENTICIDADE', W / 2, yy, { font: F.b, size: 15 });
+      yy -= 44;
+      var X = 85, LW = W - 2 * X;
+      yy = rico(d, [
+        { t: 'Eu, ', f: F.r }, { t: nome, f: F.b }, { t: ', matrícula ', f: F.r }, { t: mat, f: F.b },
+        { t: ', regularmente matriculado no Curso de Graduação em ', f: F.r }, { t: CURSO, f: F.b },
+        { t: ', turno ', f: F.r }, { t: TURNO, f: F.b },
+        { t: ', declaro que os documentos encaminhados a esta secretaria e apresentados no presente processo são autênticos, assumindo o mesmo poder de prova que os originais, nos termos do Art. 3º, § 2º da Lei 13726/2018 e dos Art. 298 e Art. 299 do Código Penal Brasileiro (Decreto-Lei Nº 2.848/1940).', f: F.r }
+      ], X, yy, LW, 11.5, 19, true);
+      yy -= 10;
+      yy = rico(d, [{ t: 'Art. 3º § 2º Quando, por motivo não imputável ao solicitante, não for possível obter diretamente do órgão ou entidade responsável documento comprobatório de regularidade, os fatos poderão ser comprovados mediante declaração escrita e assinada pelo cidadão, que, em caso de declaração falsa, ficará sujeito às sanções administrativas, civis e penais aplicáveis.', f: F.r }], X, yy, LW, 9, 14, true);
+      yy -= 8;
+      yy = rico(d, [{ t: 'Falsificação de documento:', f: F.b }, { t: ' Art. 298 - Falsificar, no todo ou em parte, documento particular ou alterar documento particular verdadeiro: Pena - reclusão, de um a cinco anos, e multa.', f: F.r }], X, yy, LW, 9, 14, true);
+      yy -= 8;
+      yy = rico(d, [{ t: 'Falsidade ideológica:', f: F.b }, { t: ' Art. 299 - Omitir, em documento público ou particular, declaração que dele devia constar, ou nele inserir ou fazer inserir declaração falsa ou diversa da que devia ser escrita, com o fim de prejudicar direito, criar obrigação ou alterar a verdade sobre fato juridicamente relevante: Pena - reclusão, um a cinco anos, e multa, se o documento é público, e reclusão de um a três anos, e multa, se o documento é particular.', f: F.r }], X, yy, LW, 9, 14, true);
+      yy -= 30;
+      direita(d, CIDADE + ', ' + dataExtenso(hoje) + '.', W - X, yy, { size: 11.5 });
+      yy -= 36;
+      var sw = 210, sh = 72;
+      caixa(d, W - X - sw, yy - sh, sw, sh, { border: PRETO, bw: 0.8 });
+      centro(d, 'Assinatura digital do(a) estudante', W - X - sw / 2, yy - sh - 14, { size: 10 });
+    })();
+
+    /* ---------- comprovantes ---------- */
+    var BAND = 24;
+    function faixa(page, box, n, e, k, m) {
+      var it = ITEM[e.item];
+      var y0 = box.y + box.height - BAND;
+      page.drawRectangle({ x: box.x, y: y0, width: box.width, height: BAND, color: FAIXA });
+      page.drawRectangle({ x: box.x, y: y0, width: box.width, height: 1.2, color: AZUL });
+      var size = Math.max(6.5, Math.min(9, box.width / 66));
+      var reserva = larg('Página 999 de 999 · folha 99/99', F.r, size) + 16;
+      var esq = 'COMPROVANTE Nº ' + n;
+      T(page, esq, box.x + 8, y0 + 8.5, { font: F.b, size: size + 0.5, color: AZUL });
+      var resto = '  ·  Código ' + it.c + '  ·  ' + periodoTxt(e) + '  ·  ' + fmtH(e._h) + '  ·  ' + it.curto + (e.desc.trim() ? ' – ' + e.desc.trim() : '');
+      var disp = box.width - 8 - larg(esq, F.b, size + 0.5) - reserva;
+      var s = safe(resto);
+      if (larg(s, F.r, size) > disp) { while (s.length > 4 && larg(s + '…', F.r, size) > disp) s = s.slice(0, -1); s += '…'; }
+      T(page, s, box.x + 8 + larg(esq, F.b, size + 0.5), y0 + 8.5, { size: size });
+      faixas.push({ page: page, xr: box.x + box.width - 8, y: y0 + 8.5, size: size, k: k, m: m });
+    }
+    async function jpegDeCanvas(canvas) {
+      // toDataURL é síncrono; canvas.toBlob é agendado pelo navegador em tempo ocioso e fica muito lento
+      // quando a aba está em segundo plano
+      var url = canvas.toDataURL('image/jpeg', 0.85);
+      if (url.indexOf('data:image/jpeg') !== 0) throw new Error('Falha ao converter imagem.');
+      return b64(url);
+    }
+    async function paginaImagem(bytesJpg, iw, ih, pw, ph, n, e, k, m) {
+      var img = await doc.embedJpg(bytesJpg);
+      var page = doc.addPage([pw, ph + BAND]);
+      page.drawImage(img, { x: 0, y: 0, width: pw, height: ph });
+      faixa(page, { x: 0, y: 0, width: pw, height: ph + BAND }, n, e, k, m);
+    }
+    async function incluirImagem(file, n, e, k, m) {
+      var img = await lerImagem(file);
+      var iw = img.width, ih = img.height, s = Math.min(1, 2000 / Math.max(iw, ih));
+      var cv = document.createElement('canvas'); cv.width = Math.round(iw * s); cv.height = Math.round(ih * s);
+      var ctx = cv.getContext('2d'); ctx.fillStyle = '#fff'; ctx.fillRect(0, 0, cv.width, cv.height);
+      ctx.drawImage(img, 0, 0, cv.width, cv.height);
+      if (img.close) img.close();
+      var jpg = await jpegDeCanvas(cv);
+      // página A4 (retrato ou paisagem, conforme a imagem), com margem
+      var retrato = ih >= iw, pw = retrato ? W : H, ph = retrato ? H - BAND : W - BAND, mg = 18;
+      var sc = Math.min((pw - 2 * mg) / cv.width, (ph - 2 * mg) / cv.height);
+      var emb = await doc.embedJpg(jpg);
+      var page = doc.addPage([pw, ph + BAND]);
+      var dw = cv.width * sc, dh = cv.height * sc;
+      page.drawImage(emb, { x: (pw - dw) / 2, y: (ph - dh) / 2, width: dw, height: dh });
+      faixa(page, { x: 0, y: 0, width: pw, height: ph + BAND }, n, e, k, m);
+    }
+    async function incluirPdfRaster(bytes, n, e, kIni, m) {
+      var pdfjs = await getPdfJs();
+      var pdf = await pdfjs.getDocument({ data: new Uint8Array(bytes.slice(0)) }).promise;
+      for (var i = 1; i <= pdf.numPages; i++) {
+        var pg = await pdf.getPage(i);
+        var vp1 = pg.getViewport({ scale: 1 });
+        var sc = Math.min(2.5, 1800 / Math.max(vp1.width, vp1.height));
+        var vp = pg.getViewport({ scale: sc });
+        var cv = document.createElement('canvas'); cv.width = Math.ceil(vp.width); cv.height = Math.ceil(vp.height);
+        var ctx = cv.getContext('2d'); ctx.fillStyle = '#fff'; ctx.fillRect(0, 0, cv.width, cv.height);
+        // intent 'print': não depende de requestAnimationFrame (não trava se a aba ficar em segundo plano)
+        await pg.render({ canvasContext: ctx, viewport: vp, intent: 'print', annotationMode: pdfjs.AnnotationMode ? pdfjs.AnnotationMode.ENABLE_FORMS : undefined }).promise;
+        var jpg = await jpegDeCanvas(cv);
+        await paginaImagem(jpg, cv.width, cv.height, vp1.width, vp1.height, n, e, kIni + i - 1, m);
+        pg.cleanup();
+      }
+      pdf.destroy();
+    }
+    async function incluirPdfVetor(bytes, n, e, kIni, m) {
+      var src = await PDFDocument.load(bytes, { updateMetadata: false, parseSpeed: PL.ParseSpeeds.Fastest });
+      try {
+        var form = src.getForm();
+        if (form.getFields().length) {
+          try { form.flatten(); } catch (e1) { form.flatten({ updateFieldAppearances: false }); }
+        }
+      } catch (e2) { return false; }
+      var pags = await doc.copyPages(src, src.getPageIndices());
+      pags.forEach(function (p, i) {
+        doc.addPage(p);
+        var cb = p.getCropBox(), mb = p.getMediaBox();
+        var topo = cb.y + cb.height + BAND;
+        p.setCropBox(cb.x, cb.y, cb.width, cb.height + BAND);
+        if (mb.y + mb.height < topo) p.setMediaBox(mb.x, mb.y, mb.width, topo - mb.y);
+        faixa(p, { x: cb.x, y: cb.y, width: cb.width, height: cb.height + BAND }, n, e, kIni + i, m);
+      });
+      return true;
+    }
+
+    for (var i = 0; i < snap.entries.length; i++) {
+      var e = snap.entries[i], n = i + 1;
+      var m = e.files.reduce(function (a, f) { return a + (f.pages || 1); }, 0), k = 1;
+      for (var j = 0; j < e.files.length; j++) {
+        var f = e.files[j];
+        progresso('Incluindo comprovante nº ' + n + ' de ' + snap.entries.length + ' (' + f.name + ')…');
+        if (f.kind === 'image') { await incluirImagem(f.file, n, e, k, m); k += 1; continue; }
+        var bytes = await f.file.arrayBuffer();
+        var ok = false;
+        if (f.modo === 'vetor') {
+          var antes = doc.getPageCount();
+          try { ok = await incluirPdfVetor(bytes, n, e, k, m); }
+          catch (err) {
+            ok = false;
+            // remove páginas eventualmente incluídas antes da falha
+            while (doc.getPageCount() > antes) doc.removePage(doc.getPageCount() - 1);
+            faixas = faixas.filter(function (fx) { return doc.getPages().indexOf(fx.page) >= 0; });
+          }
+        }
+        if (!ok) await incluirPdfRaster(bytes, n, e, k, m);
+        k += f.pages || 1;
+      }
+    }
+
+    /* ---------- numeração ---------- */
+    var N = doc.getPageCount(), pages = doc.getPages();
+    rodapes.forEach(function (p) {
+      var idx = pages.indexOf(p) + 1;
+      T(p, 'Requerimento de AACC – ' + nome + ' – matrícula ' + mat, M, 20, { size: 7, color: CINZA });
+      direita(p, 'Página ' + idx + ' de ' + N, p.getWidth() - M, 20, { size: 7, color: CINZA });
+    });
+    faixas.forEach(function (fx) {
+      direita(fx.page, 'Página ' + (pages.indexOf(fx.page) + 1) + ' de ' + N + ' · folha ' + fx.k + '/' + fx.m, fx.xr, fx.y, { size: fx.size, color: CINZA });
+    });
+
+    doc.setTitle(safe('Requerimento de AACC – ' + nome + ' (' + mat + ')'));
+    doc.setAuthor(safe(nome));
+    doc.setSubject(safe('Requerimento de registro de AACC – ' + CURSO + ' – UFSC Blumenau'));
+    doc.setCreator('Requerimento de AACC – ECA/UFSC Blumenau');
+    if (doc.setLanguage) doc.setLanguage('pt-BR');
+    progresso('Finalizando o arquivo…');
+    // objectsPerTick: Infinity evita pausas por setTimeout durante a gravação (abas em segundo plano)
+    return { bytes: await doc.save({ useObjectStreams: true, objectsPerTick: Infinity }), pagReq: pagReq, pagTermo: pagTermo };
+  }
+
+  var blobUrl = null;
+  async function aoGerar() {
+    state.showAll = true;
+    atualizar();
+    var r = ultimo;
+    if (!r.ok) {
+      var alvo = root.querySelector('[aria-invalid=true]') || $('aacc-errors');
+      if (alvo) { alvo.scrollIntoView({ behavior: 'smooth', block: 'center' }); try { alvo.focus({ preventScroll: true }); } catch (x) { } }
+      return;
+    }
+    var btn = $('aacc-gen'), pr = $('aacc-progress'), done = $('aacc-done');
+    if (btn.disabled) return;
+    btn.disabled = true; done.textContent = '';
+    // cópia dos dados no momento do clique: alterações durante a geração não afetam o PDF
+    var snap = {
+      nome: state.nome, mat: state.mat, curr: state.curr,
+      entries: state.entries.map(function (e) {
+        return { item: e.item, desc: e.desc, ini: e.ini, fim: e.fim, _h: e._h, files: e.files.slice() };
+      })
+    };
+    var bloqueados = [$('aacc-t1').parentNode, $('aacc-t2').parentNode];
+    bloqueados.forEach(function (sec) { sec.inert = true; sec.setAttribute('aria-busy', 'true'); sec.style.opacity = '.6'; });
+    var prog = function (m) { pr.textContent = m; };
+    prog('Carregando bibliotecas…');
+    try {
+      var res = await gerarPDF(prog, snap), bytes = res.bytes;
+      if (blobUrl) URL.revokeObjectURL(blobUrl);
+      var blob = new Blob([bytes], { type: 'application/pdf' });
+      blobUrl = URL.createObjectURL(blob);
+      var d = new Date();
+      var nomeArq = 'Requerimento_AACC_' + snap.mat.trim() + '_' + d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()) + '.pdf';
+      var a = el('a', { href: blobUrl, download: nomeArq });
+      document.body.appendChild(a); a.click(); a.parentNode.removeChild(a);
+      state.dirty = false;
+      prog('');
+      done.textContent = '';
+      done.appendChild(el('strong', { text: 'PDF gerado (' + fmtMB(blob.size) + '). ' }));
+      done.appendChild(document.createTextNode('O download deve iniciar automaticamente. '));
+      if (blob.size > AVISO_TAMANHO_MB * 1048576) {
+        done.appendChild(el('p', { class: 'aacc-sign-alert', style: 'margin:.6rem 0' }, [
+          el('strong', { text: 'Arquivo grande (' + fmtMB(blob.size) + '). ' }),
+          'Se o Portal de Atendimento Institucional (PAI) recusar o envio pelo tamanho, reduza os comprovantes (por exemplo, fotos em menor resolução ou PDFs “otimizados”) e gere o requerimento novamente.']));
+      }
+      var abrir = el('a', { href: blobUrl, target: '_blank', rel: 'noopener', text: 'Abrir o PDF' });
+      var baixar = el('a', { href: blobUrl, download: nomeArq, text: 'baixar novamente' });
+      done.appendChild(abrir); done.appendChild(document.createTextNode(' ou ')); done.appendChild(baixar);
+      var lk = function (k, t) { return el('a', { href: LINKS[k], target: '_blank', rel: 'noopener', text: t }); };
+      done.appendChild(el('p', { class: 'aacc-sign-alert', style: 'margin:.6rem 0 0' }, [
+        el('strong', { text: 'Atenção: o PDF tem dois campos para a sua assinatura. ' }),
+        'Assine os dois: o do requerimento (página ' + res.pagReq + ') e o da Declaração de Autenticidade (página ' + res.pagTermo + ').']));
+      done.appendChild(el('p', { style: 'margin:.5rem 0 0' }, [
+        el('strong', { text: 'Próximos passos: ' }),
+        '(1) confira o arquivo; (2) assine digitalmente o PDF, sem imprimir nem alterar o arquivo, pelo ', lk('assina', 'Assina UFSC'),
+        ' ou pelo ', lk('govbr', 'assinador gov.br'), ', nos dois campos (páginas ' + res.pagReq + ' e ' + res.pagTermo + '); (3) envie o PDF assinado à Comissão de Análise das AACCs pelo ',
+        lk('pai', 'Portal de Atendimento Institucional (PAI) – Secretaria dos Cursos do Campus Blumenau'), '.']));
+    } catch (err) {
+      prog('');
+      var ge = $('aacc-errors'); ge.textContent = '';
+      ge.appendChild(el('strong', { text: 'Não foi possível gerar o PDF. ' }));
+      ge.appendChild(document.createTextNode((err && err.message) ? err.message : String(err)));
+      if (window.console) console.error(err);
+    } finally {
+      btn.disabled = false;
+      bloqueados.forEach(function (sec) { sec.inert = false; sec.removeAttribute('aria-busy'); sec.style.opacity = ''; });
+    }
+  }
+
+  /* ------------------------------------------------------------------ inicialização */
+  function adicionarEntrada(foco) {
+    var e = novaEntrada();
+    state.entries.push(e);
+    $('aacc-list').appendChild(montarEntrada(e));
+    atualizar();
+    if (foco) e.refs.sel.focus();
+  }
+  [['nome', 'aacc-nome', 'input'], ['mat', 'aacc-mat', 'input'], ['curr', 'aacc-curr', 'change']].forEach(function (p) {
+    var inp = $(p[1]);
+    inp.addEventListener(p[2], function () { state[p[0]] = inp.value; if (p[2] === 'change') state.touched[p[0]] = true; mudou(); });
+    inp.addEventListener('blur', function () { state.touched[p[0]] = true; atualizar(); });
+  });
+  Array.prototype.forEach.call(root.querySelectorAll('a[data-aacc-link]'), function (a) { a.href = LINKS[a.getAttribute('data-aacc-link')]; });
+  $('aacc-add').addEventListener('click', function () { adicionarEntrada(true); });
+  $('aacc-gen').addEventListener('click', aoGerar);
+  window.addEventListener('beforeunload', function (ev) {
+    if (state.dirty && (state.entries.length || state.nome)) { ev.preventDefault(); ev.returnValue = ''; }
+  });
+  // tabela de referência
+  var ref = $('aacc-ref').querySelector('tbody');
+  ITENS.forEach(function (it) {
+    ref.appendChild(el('tr', {}, [el('td', { text: String(it.c) }), el('td', { text: it.nome }),
+      el('td', { text: it.regra || limiteTxt(it) }), el('td', { text: it.total + ' h' }), el('td', { text: it.comp })]));
+  });
+  adicionarEntrada(false);
+  state.dirty = false;
+  getPdfLib().catch(function () { });
+})();
+</script>
+</div>
+<!-- ===================== FIM DO BLOCO – REQUERIMENTO DE AACC ===================== -->
+
+<footer style="max-width:980px;margin:24px auto 0;font-size:13px;color:#56606b;text-align:center">Curso de Graduação em Engenharia de Controle e Automação – UFSC, Campus Blumenau. Os dados e comprovantes informados são processados apenas no seu navegador e não são enviados a servidores.</footer>
+</body>
+</html>
